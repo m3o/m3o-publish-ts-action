@@ -9,6 +9,9 @@ echo 'setting up m3o-js for publishing...'
 cd ${M3O_JS_LOCAL_PATH}
 ts_publish_setup
 
+echo 'formatting ...'
+prettier -w .
+
 echo 'publishing m3o-js to npm ...'
 if [! -f .npmrc ]; then echo "missing .npmrc" && exit 1; fi
 npm install
