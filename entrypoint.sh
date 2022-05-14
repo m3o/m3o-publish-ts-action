@@ -7,7 +7,7 @@ echo "Working directory ${WORK_DIR}"
 echo 'setting up m3o-js for publishing...'
 
 cd ${M3O_JS_LOCAL_PATH}
-ts_publish_setup
+ts-publish-setup
 
 echo 'formatting ...'
 prettier -w .
