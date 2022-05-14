@@ -1,0 +1,23 @@
+# action.yaml
+name: 'ts publish setup'
+description: 'This action will setup m3o-js for publishing'
+inputs:
+  npm_token:
+    description: 'NPM Token'
+    required: true
+  m3o_js_local_path:
+    description: 'The local path to m3o-js'
+    required: true
+
+outputs:
+  success:
+    description: 'The result of this Action'
+  version:
+    description: 'latest vesino that has been published'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.npm_token }}
+    - ${{ inputs.m3o_js_local_path }}
