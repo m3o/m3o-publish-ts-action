@@ -7,6 +7,8 @@ echo "Working directory ${WORK_DIR}"
 echo 'setting up m3o-js for publishing...'
 
 cd ${M3O_JS_LOCAL_PATH}
+echo "working directory $(pwd)"
+ls -al
 ts-publish-setup
 
 echo 'formatting ...'
