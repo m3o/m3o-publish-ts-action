@@ -26,7 +26,6 @@ jobs:
 
       - name: Publish m3o-js clients
         uses: m3o/m3o-publish-ts-action@main
-        with:
-          npm_token: ${{ secrets.NPM_TOKEN }}
-          m3o_js_local_path: m3o-js
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 ```
