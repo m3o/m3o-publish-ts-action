@@ -8,21 +8,15 @@ This action do the following necessaty steps in order to publish m3o-js:
 - install and build the project
 - publish m3o-js to npm
 
-## Inputs
-
-## `npm_token`
-
-**Required** NPM Token.
-
-## `m3o_js_local_path`
-
-**Required** The local path of m3o-js repo in the current workflow.
-
-<!-- ## Outputs
+## Outputs
 
 ## `success`
 
-The result of this Action -->
+The result of this Action
+
+## `version`
+
+The latest version that has been published
 
 ## Example usage
 
@@ -36,4 +30,3 @@ jobs:
           npm_token: ${{ secrets.NPM_TOKEN }}
           m3o_js_local_path: m3o-js
 ```
-
